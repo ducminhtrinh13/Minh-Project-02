@@ -321,6 +321,7 @@ a {
 .course-item .thumb {
     width: 370px;
     height: 278px;
+    margin: -1px;
     border-radius: 12px 12px 0px 0px;
     object-fit: cover;
 }
