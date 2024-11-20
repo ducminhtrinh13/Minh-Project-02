@@ -70,7 +70,7 @@ a {
 
 .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp, 1);
+    line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -327,7 +327,7 @@ a {
 .course-list .course-item {
     width: 370px;
     height: 466px;
-    border: 1px solid #E2DFDA;
+    border: 1px solid #e2dfda;
     border-radius: 12px;
     background: #fff;
 }
@@ -403,4 +403,68 @@ a {
 
 .course-item .foot .btn:hover {
     background: var(--primary-color);
+}
+
+/* ========== Testimonial ========== */
+.feedback {
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-item .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    line-height: 1.41;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.85;
+}
+
+.feedback-item .info .dots {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+}
+
+.feedback-item .info .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .info .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+}
+
+.feedback-item .content blockquote {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.53;
+    margin-left: 30px;
 }
